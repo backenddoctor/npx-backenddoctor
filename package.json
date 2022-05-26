@@ -1,0 +1,42 @@
+{
+  "name": "backenddoctor",
+  "version": "1.0.0",
+  "description": "A business card for Backend Doctor (@backenddoctor)",
+  "type": "module",
+  "bin": "./bin/card.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backenddoctor/npx-backenddoctor.git"
+  },
+  "scripts": {
+    "dev": "npx nodemon render.js",
+    "render": "node render.js",
+    "build": "FORCE_COLOR=3 npm run --silent render > build/card.out",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "bin/card.js",
+    "build/card.out"
+  ],
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Zoltan Burgermeiszter <zoltan@backenddoctor.com>",
+  "homepage": "https://backenddoctor.com",
+  "license": "MIT",
+  "devDependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.1",
+    "clear": "^0.1.0",
+    "columnify": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": "~8"
+  }
+}
